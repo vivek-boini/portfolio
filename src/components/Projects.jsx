@@ -114,23 +114,23 @@ const Projects = () => {
                                 {/* Card */}
                                 <div className={`relative overflow-hidden rounded-3xl transition-colors duration-500 h-full flex flex-col md:block ${isActive ? 'bg-neutral-800 text-white shadow-2xl shadow-black/50' : 'bg-neutral-900 text-neutral-400'}`}>
 
-                                    <div className="grid md:grid-cols-2 gap-0 md:gap-6 h-full">
+                                    <div className="flex flex-col md:grid md:grid-cols-2 gap-0 md:gap-6 h-full">
 
                                         {/* Left: Content */}
-                                        <div className="p-6 md:p-12 flex flex-col justify-center items-start text-left order-2 md:order-1 flex-1">
-                                            <span className={`inline-block px-3 py-1.5 rounded-full text-[10px] md:text-xs font-black uppercase tracking-widest mb-3 md:mb-4 ${isActive ? 'bg-orange-500 text-white' : 'bg-neutral-800 text-neutral-500'}`}>
+                                        <div className="p-5 md:p-12 flex flex-col justify-start md:justify-center items-start text-left order-2 md:order-1 flex-1 h-full">
+                                            <span className={`inline-block px-3 py-1 rounded-full text-[10px] md:text-xs font-black uppercase tracking-widest mb-2 md:mb-4 ${isActive ? 'bg-orange-500 text-white' : 'bg-neutral-800 text-neutral-500'}`}>
                                                 {project.tagline}
                                             </span>
 
-                                            <h3 className={`text-2xl md:text-4xl font-black mb-3 md:mb-4 leading-none uppercase ${isActive ? 'text-white' : 'text-neutral-500'}`}>
+                                            <h3 className={`text-xl md:text-4xl font-black mb-2 md:mb-4 leading-tight uppercase ${isActive ? 'text-white' : 'text-neutral-500'}`}>
                                                 {project.title}
                                             </h3>
 
-                                            <p className={`font-medium leading-relaxed mb-6 text-lg ${isActive ? 'text-neutral-300' : 'text-neutral-600'}`}>
+                                            <p className={`font-medium leading-normal mb-4 md:mb-6 text-sm md:text-lg line-clamp-3 md:line-clamp-none ${isActive ? 'text-neutral-300' : 'text-neutral-600'}`}>
                                                 {project.description}
                                             </p>
 
-                                            <div className="flex flex-wrap gap-2 mb-6">
+                                            <div className="flex flex-wrap gap-2 mb-4 md:mb-6 mt-auto">
                                                 {project.stack.split(' • ').map((tech, i) => (
                                                     <span key={i} className={`text-[10px] md:text-xs font-bold px-2 py-1 rounded bg-white/5 ${isActive ? 'text-orange-500' : 'text-neutral-600'}`}>
                                                         {tech}
@@ -138,7 +138,7 @@ const Projects = () => {
                                                 ))}
                                             </div>
 
-                                            <div className="flex gap-3">
+                                            <div className="flex gap-3 mt-auto">
                                                 <a
                                                     href={project.githubLink}
                                                     target="_blank"
@@ -161,7 +161,7 @@ const Projects = () => {
                                         </div>
 
                                         {/* Right: Image */}
-                                        <div className="relative h-64 md:h-full min-h-[400px] w-full bg-neutral-900 overflow-hidden order-1 md:order-2 group">
+                                        <div className="relative h-48 md:h-full md:min-h-[400px] w-full bg-neutral-900 overflow-hidden order-1 md:order-2 group shrink-0">
                                             <div className="absolute inset-0 bg-gradient-to-t from-neutral-900 via-transparent to-transparent z-10 md:hidden" />
                                             <img
                                                 src={project.image}

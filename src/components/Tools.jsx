@@ -23,7 +23,7 @@ const Tools = () => {
     const constraintsRef = useRef(null);
 
     return (
-        <section ref={constraintsRef} className="py-32 bg-gradient-to-b from-neutral-100 via-white to-orange-50 overflow-hidden min-h-screen relative flex flex-col justify-center" id="tools">
+        <section ref={constraintsRef} className="py-16 md:py-32 bg-gradient-to-b from-neutral-100 via-white to-orange-50 overflow-hidden min-h-screen relative flex flex-col justify-center" id="tools">
 
             {/* Huge Background Text */}
             <div className="absolute inset-0 flex items-center justify-center opacity-[0.03] pointer-events-none select-none">

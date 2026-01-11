@@ -37,7 +37,7 @@ const certificates = [
 
 const Certificates = () => {
     return (
-        <section className="py-32 bg-gradient-to-b from-neutral-900 to-black relative overflow-hidden" id="certificates">
+        <section className="py-16 md:py-32 bg-gradient-to-b from-neutral-900 to-black relative overflow-hidden" id="certificates">
             {/* Unique Background Pattern: Tech Grid */}
             <div className="absolute inset-0 opacity-[0.03] pointer-events-none"
                 style={{
@@ -50,7 +50,7 @@ const Certificates = () => {
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-primary-500/10 rounded-full blur-[120px] pointer-events-none"></div>
 
             <div className="container mx-auto px-4 relative z-10">
-                <div className="flex flex-col items-center mb-20">
+                <div className="flex flex-col items-center mb-12 md:mb-20">
                     <div className="flex items-center gap-4 mb-6 justify-center">
                         <motion.div
                             animate={{ rotate: [0, 10, -10, 0] }}
@@ -71,7 +71,7 @@ const Certificates = () => {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
                     {certificates.map((cert, index) => (
                         <motion.div
                             key={index}

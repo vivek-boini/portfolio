@@ -72,7 +72,7 @@ const Contact = () => {
     };
 
     return (
-        <section ref={sectionRef} className="py-24 bg-gradient-to-br from-orange-500 to-orange-700 overflow-hidden" id="contact">
+        <section ref={sectionRef} className="py-16 md:py-24 bg-gradient-to-br from-orange-500 to-orange-700 overflow-hidden" id="contact">
             <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-12">
 
                 {/* Info Side - Slides in from Left */}

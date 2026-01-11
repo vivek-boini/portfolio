@@ -62,7 +62,7 @@ const Hero = () => {
                         <span className="text-orange-600 font-medium tracking-wide text-sm uppercase">Available for work</span>
                     </div>
 
-                    <h2 className="text-xl md:text-2xl font-bold text-orange-600 mb-2 tracking-widest uppercase">
+                    <h2 className="text-lg md:text-2xl font-bold text-orange-600 mb-2 tracking-widest uppercase">
                         Namaste, I'm
                     </h2>
 
@@ -74,18 +74,18 @@ const Hero = () => {
                         VIVEK.
                     </motion.h1>
 
-                    <div className="h-8 md:h-12 overflow-hidden relative mb-10 w-full flex justify-center items-center">
-                        <span className="text-2xl md:text-4xl font-bold text-neutral-800">
+                    <div className="h-8 md:h-12 overflow-hidden relative mb-6 md:mb-10 w-full flex justify-center items-center">
+                        <span className="text-xl md:text-4xl font-bold text-neutral-800">
                             {text}
                             <span className="animate-pulse text-orange-600">|</span>
                         </span>
                     </div>
 
                     <div className="flex flex-wrap gap-4 justify-center">
-                        <a href="#projects" className="px-10 py-5 bg-orange-600 text-white font-bold rounded-full hover:bg-orange-700 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 text-lg">
+                        <a href="#projects" className="px-8 py-4 md:px-10 md:py-5 bg-orange-600 text-white font-bold rounded-full hover:bg-orange-700 transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 text-base md:text-lg">
                             See My Work
                         </a>
-                        <a href="#contact" className="px-10 py-5 border-2 border-neutral-200 text-neutral-900 font-bold rounded-full hover:bg-neutral-900 hover:text-white transition-all hover:-translate-y-1 text-lg">
+                        <a href="#contact" className="px-8 py-4 md:px-10 md:py-5 border-2 border-neutral-200 text-neutral-900 font-bold rounded-full hover:bg-neutral-900 hover:text-white transition-all hover:-translate-y-1 text-base md:text-lg">
                             Contact Me
                         </a>
                     </div>

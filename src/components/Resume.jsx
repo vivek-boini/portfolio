@@ -7,7 +7,7 @@ const Resume = () => {
     const isInView = useInView(sectionRef, { once: true, amount: 0.3 });
 
     return (
-        <section ref={sectionRef} className="h-screen w-full bg-gradient-to-b from-neutral-50 to-orange-100 text-neutral-900 flex flex-col items-center justify-center overflow-hidden relative" id="resume">
+        <section ref={sectionRef} className="min-h-screen py-24 w-full bg-gradient-to-b from-neutral-50 to-orange-100 text-neutral-900 flex flex-col items-center justify-center overflow-hidden relative" id="resume">
 
             {/* Background Decoration */}
             <div className="absolute inset-0 flex items-center justify-center opacity-[0.03] pointer-events-none">

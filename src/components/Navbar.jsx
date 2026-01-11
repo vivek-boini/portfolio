@@ -105,7 +105,7 @@ const Navbar = () => {
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: 'auto' }}
                         exit={{ opacity: 0, height: 0 }}
-                        className="fixed top-[70px] left-4 right-4 z-[980] bg-white rounded-3xl shadow-2xl border border-neutral-100 overflow-hidden md:hidden"
+                        className="fixed top-[70px] left-4 right-4 z-[980] bg-white rounded-3xl shadow-2xl border border-neutral-100 overflow-hidden md:hidden max-h-[80vh] overflow-y-auto"
                     >
                         <div className="flex flex-col p-4 gap-2">
                             {navItems.map((item) => (

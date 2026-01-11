@@ -72,7 +72,7 @@ const Projects = () => {
                 </div>
 
                 {/* Carousel Grid */}
-                <div className="relative w-full max-w-7xl h-[550px] flex items-center justify-center">
+                <div className="relative w-full max-w-7xl h-[650px] md:h-[550px] flex items-center justify-center">
                     {projects.map((project, index) => {
                         // Calculate offset logic for generic carousel feel
                         const offset = index - activeIndex;
@@ -112,17 +112,17 @@ const Projects = () => {
                                 }}
                             >
                                 {/* Card */}
-                                <div className={`relative overflow-hidden rounded-3xl transition-colors duration-500 ${isActive ? 'bg-neutral-800 text-white shadow-2xl shadow-black/50' : 'bg-neutral-900 text-neutral-400'}`}>
+                                <div className={`relative overflow-hidden rounded-3xl transition-colors duration-500 h-full flex flex-col md:block ${isActive ? 'bg-neutral-800 text-white shadow-2xl shadow-black/50' : 'bg-neutral-900 text-neutral-400'}`}>
 
-                                    <div className="grid md:grid-cols-2 gap-0 md:gap-6">
+                                    <div className="grid md:grid-cols-2 gap-0 md:gap-6 h-full">
 
                                         {/* Left: Content */}
-                                        <div className="p-8 md:p-12 flex flex-col justify-center items-start text-left order-2 md:order-1">
-                                            <span className={`inline-block px-3 py-1.5 rounded-full text-[10px] md:text-xs font-black uppercase tracking-widest mb-4 ${isActive ? 'bg-orange-500 text-white' : 'bg-neutral-800 text-neutral-500'}`}>
+                                        <div className="p-6 md:p-12 flex flex-col justify-center items-start text-left order-2 md:order-1 flex-1">
+                                            <span className={`inline-block px-3 py-1.5 rounded-full text-[10px] md:text-xs font-black uppercase tracking-widest mb-3 md:mb-4 ${isActive ? 'bg-orange-500 text-white' : 'bg-neutral-800 text-neutral-500'}`}>
                                                 {project.tagline}
                                             </span>
 
-                                            <h3 className={`text-3xl md:text-4xl font-black mb-4 leading-none uppercase ${isActive ? 'text-white' : 'text-neutral-500'}`}>
+                                            <h3 className={`text-2xl md:text-4xl font-black mb-3 md:mb-4 leading-none uppercase ${isActive ? 'text-white' : 'text-neutral-500'}`}>
                                                 {project.title}
                                             </h3>
 
